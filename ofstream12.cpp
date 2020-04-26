@@ -18,9 +18,8 @@ void ofstream12::completeWriteBit()
 	// Uses fByteIndex and fBitIndex
 	fBitIndex--;
 
-	if (fBitIndex < 0) // Maybe "<"
+	if (fBitIndex < 0)
 	{
-		//fByteIndex ?; Maybe increment
 		fByteIndex++;
 		fBitIndex = 7;
 
